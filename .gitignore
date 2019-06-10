@@ -25,7 +25,16 @@
 *.la
 *.a
 *.lib
-
+*.exp
+*.pdb
+*.ilk
+*.tlog
+*.log
+*.idb
+*.opendb
+ipch
+Debug
+x64
 # Executables
 *.exe
 *.out
