@@ -1,0 +1,3 @@
+AUX_SOURCE_DIRECTORY(. Joker_SRCS)
+AUX_SOURCE_DIRECTORY(./Include Joker_SRCS)
+ADD_LIBRARY (Joker_Engine ${Joker_SRCS})

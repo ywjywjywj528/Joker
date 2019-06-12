@@ -1,5 +1,6 @@
 #pragma once
 #include "Predefine.h"
+#include <typeinfo>
 namespace Joker
 {
 	class Node;
@@ -17,17 +18,17 @@ namespace Joker
 	template<class T>
 	void AutoPoolRealse<T>::add(T* _obj)
 	{
-		vector<T*>::iterator it = std::find(_pool.begin(), _pool.end(), obj);
+		vector<T*>::iterator it = std::find(_pool.begin(), _pool.end(), _obj);
 		if (it == _pool.end())
 		{
-			_pool.push_back(pbj);
+			_pool.push_back(_obj);
 		}
 	}
 
 	template<class T>
 	void AutoPoolRealse<T>::remove(T* _obj)
 	{
-		vector<T*>::iterator it = std::find(_pool.begin(), _pool.end(), obj);
+		vector<T*>::iterator it = std::find(_pool.begin(), _pool.end(), _obj);
 		if (it != _pool.end())
 		{
 			_pool.erase(it);
@@ -50,6 +51,21 @@ namespace Joker
 			}
 			return pInstance;
 		}
+
+		template<class T>
+		AutoPoolRealse<T>* GetPool()
+		{
+			if (typeid(T).name() == "Node")
+			{
+				return _nodePool;
+			}
+			else if (typeid(T).name() == "Component")
+			{
+				return (AutoPoolRealse<T>*)_componentPool;
+			}
+			return nullptr;
+		}
+
 
 	private:
 		static PoolManger* pInstance;
