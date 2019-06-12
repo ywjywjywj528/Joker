@@ -35,6 +35,7 @@
 ipch
 Debug
 x64
+*.suo
 # Executables
 *.exe
 *.out

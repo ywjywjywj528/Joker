@@ -7,3 +7,17 @@ using namespace std;
 #else
 #define JE_EXPORT __declspec(dllimport)
 #endif
+
+#define JE_DELETE(p) \
+if(p != nullptr)\
+{\
+	delete p;\
+	p = nullptr;\
+}
+
+#define JE_DELETE_ARRAY(p) \
+if(p != nullptr)\
+{\
+	delete[] p;\
+	p = nullptr;\
+}
