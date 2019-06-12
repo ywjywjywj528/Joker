@@ -55,14 +55,16 @@ namespace Joker
 		template<class T>
 		AutoPoolRealse<T>* GetPool()
 		{
-			if (typeid(T).name() == "Node")
+			string cname(typeid(T).name());
+			if (cname == "class Joker::Node")
 			{
 				return _nodePool;
 			}
-			else if (typeid(T).name() == "Component")
+			else if (cname == "Joker::Component")
 			{
 				return (AutoPoolRealse<T>*)_componentPool;
 			}
+			printf("%s", typeid(T).name());
 			return nullptr;
 		}
 
