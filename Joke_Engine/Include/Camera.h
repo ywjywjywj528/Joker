@@ -12,11 +12,19 @@ namespace Joker
 	{
 	public:
 		static Camera* CreateCamera(cam_type _type = e_Perspective);
+
+		void SetViewport(int x, int y, int width, int height);
+
+
 	private:
 		Camera(cam_type _type);
 		~Camera() {};
 
 	private:
 		cam_type m_type;
+		int _x;
+		int _y;
+		int _width;
+		int _height;
 	};
 }

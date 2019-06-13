@@ -13,4 +13,12 @@ namespace Joker
 	{
 		m_type = _type;
 	}
+
+	void Camera::SetViewport(int x, int y, int width, int height)
+	{
+		_x = x;
+		_y = y;
+		_width = width;
+		_height = height;
+	}
 }
