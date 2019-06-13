@@ -45,9 +45,6 @@
     <ClInclude Include="Include\Scene.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Include\SceneManger.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Include\Transform.h">
       <Filter>头文件</Filter>
     </ClInclude>

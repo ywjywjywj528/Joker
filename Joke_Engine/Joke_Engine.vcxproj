@@ -32,7 +32,6 @@
     <ClInclude Include="Include\Predefine.h" />
     <ClInclude Include="Include\Ref.h" />
     <ClInclude Include="Include\Scene.h" />
-    <ClInclude Include="Include\SceneManger.h" />
     <ClInclude Include="Include\Transform.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
