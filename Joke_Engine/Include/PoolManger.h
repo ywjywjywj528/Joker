@@ -58,13 +58,12 @@ namespace Joker
 			string cname(typeid(T).name());
 			if (cname == "class Joker::Node")
 			{
-				return _nodePool;
+				return (AutoPoolRealse<T>*)_nodePool;
 			}
-			else if (cname == "Joker::Component")
+			else if (cname == "class Joker::Component")
 			{
 				return (AutoPoolRealse<T>*)_componentPool;
 			}
-			printf("%s", typeid(T).name());
 			return nullptr;
 		}
 
