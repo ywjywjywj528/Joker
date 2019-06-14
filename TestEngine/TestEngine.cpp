@@ -9,6 +9,6 @@ int main()
 {
 	Scene* mainSecne = Director::getInstance()->CreateScene();
 	Camera* cam = Camera::CreateCamera();
-    return 0;
+    return 0; 
 }
 
