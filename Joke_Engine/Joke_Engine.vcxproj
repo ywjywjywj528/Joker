@@ -28,6 +28,7 @@
     <ClInclude Include="Include\matrix.h" />
     <ClInclude Include="Include\Mesh.h" />
     <ClInclude Include="Include\Node.h" />
+    <ClInclude Include="Include\OGLHeader.h" />
     <ClInclude Include="Include\PoolManger.h" />
     <ClInclude Include="Include\Predefine.h" />
     <ClInclude Include="Include\Ref.h" />
@@ -114,7 +115,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_USEDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Include;third-deps\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
