@@ -1,11 +1,12 @@
 #pragma once
+#include "Predefine.h"
 #include "OGLHeader.h"
 namespace Joker
 {
-	class Mesh
+	class JE_EXPORT Mesh
 	{
 	public:
-		enum PrimitiveType
+		enum OperationType
 		{
 			TRIANGLES = GL_TRIANGLES,
 			TRIANGLE_STRIP = GL_TRIANGLE_STRIP,

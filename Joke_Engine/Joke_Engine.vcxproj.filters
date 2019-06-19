@@ -66,6 +66,9 @@
     <ClInclude Include="Include\OGLHeader.h">
       <Filter>头文件\common</Filter>
     </ClInclude>
+    <ClInclude Include="Include\SubMesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Joker_Engine.rc">

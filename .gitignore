@@ -42,3 +42,5 @@ x64
 *.app
 build
 /Joke_Engine.VC.db
+*.db
+/Joke_Engine/~AutoRecover.Joke_Engine.vcxproj
