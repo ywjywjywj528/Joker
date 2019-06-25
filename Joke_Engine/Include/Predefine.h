@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <cassert>
 using namespace std;
 
 #ifdef _USEDLL
@@ -21,3 +22,8 @@ if(p != nullptr)\
 	delete[] p;\
 	p = nullptr;\
 }
+
+#define JE_ERROR(...) do\
+{\
+	assert(0);\
+}while(0)

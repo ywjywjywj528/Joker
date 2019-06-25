@@ -44,6 +44,7 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Director.cpp" />
     <ClCompile Include="PoolManger.cpp" />
+    <ClCompile Include="Scene.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{188AAFB7-BCF0-4978-BD8D-651140B19178}</ProjectGuid>

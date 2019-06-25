@@ -13,9 +13,13 @@ namespace Joker
 	private:
 		Scene() {}
 		~Scene() {};
+
 	private:
+		typedef vector<Camera*> cameraList;
+		typedef vector<Camera*>::iterator camIter;
+
 		Node* m_Root;
-		vector<Camera*> m_Cams;
+		cameraList m_Cams;
 		Camera *_defaultCamera;
 	};
 } 
