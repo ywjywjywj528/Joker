@@ -29,6 +29,7 @@
     <ClInclude Include="Include\Mesh.h" />
     <ClInclude Include="Include\Node.h" />
     <ClInclude Include="Include\OGLHeader.h" />
+    <ClInclude Include="Include\Platform.h" />
     <ClInclude Include="Include\PoolManger.h" />
     <ClInclude Include="Include\Predefine.h" />
     <ClInclude Include="Include\Ref.h" />

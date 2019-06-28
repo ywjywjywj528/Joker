@@ -1,7 +1,13 @@
 #include "Scene.h"
-
+#include "Camera.h"
 namespace Joker
 {
+	Scene::Scene()
+	{
+		_defaultCamera = Camera::CreateCamera();
+		addCamera(_defaultCamera);
+	}
+
 	void Scene::addCamera(Camera* _cam)
 	{
 		if (m_Cams.empty())
@@ -17,5 +23,6 @@ namespace Joker
 		}
 		m_Cams.push_back(_cam);
 	}
+
 			
 }

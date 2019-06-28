@@ -9,9 +9,10 @@ namespace Joker
 		friend class Director;
 	public:
 		void addCamera(Camera* _cam);
-		void setDefaultCamera(int index);
+		Camera* getDefaultCam() { return _defaultCamera; }
+		//void setDefaultCamera(int index);
 	private:
-		Scene() {}
+		Scene();
 		~Scene() {};
 
 	private:
@@ -20,6 +21,6 @@ namespace Joker
 
 		Node* m_Root;
 		cameraList m_Cams;
-		Camera *_defaultCamera;
+		Camera* _defaultCamera;
 	};
 } 

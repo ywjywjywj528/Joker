@@ -5,7 +5,7 @@ namespace Joker
 {
 	static Director director;
 
-	inline Director* Director::getInstance()
+	inline Director* Director::GetInstance()
 	{
 		return &director;
 	}
@@ -15,5 +15,10 @@ namespace Joker
 		Scene* pScene = new Scene;
 		_scenes.push_back(pScene);
 		return pScene;
+	}
+
+	void Director::RunScene(Scene* pScene)
+	{
+
 	}
 }

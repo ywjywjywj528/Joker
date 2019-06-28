@@ -8,9 +8,12 @@
 using namespace Joker;
 int main()
 {
-	Scene* mainSecne = Director::getInstance()->CreateScene();
+	Director* directorinstance =  Director::GetInstance();
+	Scene* mainSecne = directorinstance->CreateScene();
 	Camera* cam = Camera::CreateCamera();
 	mainSecne->addCamera(cam);
+
+	directorinstance->RunScene(mainSecne);
     return 0; 
 }
 

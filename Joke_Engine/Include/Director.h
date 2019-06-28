@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "Predefine.h"
 
 namespace Joker
@@ -7,10 +7,16 @@ namespace Joker
 	class JE_EXPORT Director
 	{
 	public:
-		static Director* getInstance();
+		static Director* GetInstance();
 		Scene* CreateScene();
 		//Scene* CreateScene(const char* _sceneile);
-	private:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            	private:
+
+		void RunScene(Scene* pScene);
+		void RunNextScene();         
+
+	private:
+		Scene* m_RuningScene：NULL;
+
 		vector<Scene* > _scenes;
 	};
 }
