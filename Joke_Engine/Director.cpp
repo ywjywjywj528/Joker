@@ -1,13 +1,13 @@
-#include "Director.h"
+﻿#include "Director.h"
 #include "Scene.h"
-
+#include "Platform.h"
 namespace Joker
 {
-	static Director director;
-
-	inline Director* Director::GetInstance()
+	Director Director::m_directorInstance;
+	Director::Director()
 	{
-		return &director;
+		m_RuningScene = nullptr;
+		m_Platform = nullptr;
 	}
 
 	Scene* Director::CreateScene()
@@ -19,6 +19,9 @@ namespace Joker
 
 	void Director::RunScene(Scene* pScene)
 	{
+		if (m_Platform == nullptr)
+		{
 
+		}
 	}
 }

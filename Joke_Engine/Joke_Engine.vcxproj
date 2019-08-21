@@ -44,6 +44,7 @@
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Director.cpp" />
+    <ClCompile Include="Platfrom.cpp" />
     <ClCompile Include="PoolManger.cpp" />
     <ClCompile Include="Scene.cpp" />
   </ItemGroup>
