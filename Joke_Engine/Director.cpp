@@ -4,6 +4,7 @@
 namespace Joker
 {
 	Director Director::m_directorInstance;
+	//int Director::aaa = 1;
 	Director::Director()
 	{
 		m_RuningScene = nullptr;
@@ -23,5 +24,10 @@ namespace Joker
 		{
 
 		}
+	}
+
+	Director* Director::GetInstance()
+	{
+		return &m_directorInstance;
 	}
 }
