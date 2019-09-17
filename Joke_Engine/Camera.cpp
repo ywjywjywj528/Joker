@@ -1,7 +1,6 @@
 #include "Camera.h"
 #include "PoolManger.h"
-namespace Joker
-{
+NS_JE_BEGIN
 	Camera* Camera::CreateCamera(cam_type _type /* = e_Perspective */)
 	{
 		Camera* pCam = new Camera(_type);
@@ -21,4 +20,4 @@ namespace Joker
 		_width = width;
 		_height = height;
 	}
-}
+NS_JE_END

@@ -27,11 +27,13 @@
     <ClInclude Include="Include\drawable.h" />
     <ClInclude Include="Include\matrix.h" />
     <ClInclude Include="Include\Mesh.h" />
+    <ClInclude Include="Include\glview.h" />
     <ClInclude Include="Include\Node.h" />
     <ClInclude Include="Include\OGLHeader.h" />
     <ClInclude Include="Include\Platform.h" />
     <ClInclude Include="Include\PoolManger.h" />
     <ClInclude Include="Include\Predefine.h" />
+    <ClInclude Include="Include\Rect.h" />
     <ClInclude Include="Include\Ref.h" />
     <ClInclude Include="Include\Scene.h" />
     <ClInclude Include="Include\SubMesh.h" />
@@ -44,7 +46,9 @@
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Director.cpp" />
+    <ClCompile Include="glview.cpp" />
     <ClCompile Include="Platfrom.cpp" />
+    <ClCompile Include="Rect.cpp" />
     <ClCompile Include="PoolManger.cpp" />
     <ClCompile Include="Scene.cpp" />
   </ItemGroup>
@@ -119,11 +123,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_USEDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>Include;third-deps\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Include;third-deps\include;third-deps\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>third-deps\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

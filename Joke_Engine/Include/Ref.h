@@ -1,7 +1,6 @@
 #pragma once
-
-namespace Joker
-{
+#include "Predefine.h"
+NS_JE_BEGIN
 	class Ref
 	{
 	public:
@@ -15,4 +14,4 @@ namespace Joker
 		unsigned int _refcount;
 
 	};
-}
+NS_JE_END

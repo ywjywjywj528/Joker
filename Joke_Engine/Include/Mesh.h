@@ -1,8 +1,7 @@
 #pragma once
 #include "Predefine.h"
 #include "OGLHeader.h"
-namespace Joker
-{
+NS_JE_BEGIN
 	class JE_EXPORT Mesh
 	{
 	public:
@@ -22,4 +21,4 @@ namespace Joker
 		Mesh();
 		~Mesh();
 	};
-}
+NS_JE_END

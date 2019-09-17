@@ -1,7 +1,6 @@
 #include"PoolManger.h"
 
-namespace Joker
-{
+NS_JE_BEGIN
 	PoolManger* PoolManger::pInstance = nullptr;
 
 	PoolManger::PoolManger()
@@ -14,4 +13,4 @@ namespace Joker
 		JE_DELETE(_nodePool);
 		JE_DELETE(_componentPool);
 	}
-}
+NS_JE_END

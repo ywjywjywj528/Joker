@@ -72,6 +72,12 @@
     <ClInclude Include="Include\Platform.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Include\Rect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\glview.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Joker_Engine.rc">
@@ -92,6 +98,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Platfrom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Rect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="glview.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

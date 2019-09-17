@@ -1,7 +1,6 @@
 #pragma once
 #include "Predefine.h"
-namespace Joker
-{
+NS_JE_BEGIN
 	class Node;
 	class Camera;
 	class JE_EXPORT Scene
@@ -23,4 +22,4 @@ namespace Joker
 		cameraList m_Cams;
 		Camera* _defaultCamera;
 	};
-} 
+NS_JE_END

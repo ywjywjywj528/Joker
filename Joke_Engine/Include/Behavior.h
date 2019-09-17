@@ -1,6 +1,6 @@
 #pragma once
-namespace Joker
-{
+#include "Predefine.h"
+NS_JE_BEGIN
 	class Behavior
 	{
 	public:
@@ -13,4 +13,4 @@ namespace Joker
 		virtual void FixedUpdate();
 		virtual void OnDelete();
 	};
-}
+NS_JE_END

@@ -1,10 +1,13 @@
 #pragma once
+#include "glfw3.h"
 #include "Predefine.h"
-namespace Joker
-{
+NS_JE_BEGIN
 	class JE_EXPORT Platform
 	{
 	public:
-		static Platform* Create();
+		Platform();
+	private:
+		GLFWwindow* _mainWindow;
+		GLFWmonitor* _monitor;
 	};
-}
+NS_JE_END

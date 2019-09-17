@@ -1,8 +1,7 @@
 #pragma once
 #include "Predefine.h"
 #include "Node.h"
-namespace Joker
-{
+NS_JE_BEGIN
 	enum cam_type
 	{
 		e_Ortho,
@@ -27,4 +26,4 @@ namespace Joker
 		int _width;
 		int _height;
 	};
-}
+NS_JE_END

@@ -1,8 +1,7 @@
 ﻿#include "Director.h"
 #include "Scene.h"
 #include "Platform.h"
-namespace Joker
-{
+NS_JE_BEGIN
 	Director Director::m_directorInstance;
 	//int Director::aaa = 1;
 	Director::Director()
@@ -30,4 +29,4 @@ namespace Joker
 	{
 		return &m_directorInstance;
 	}
-}
+NS_JE_END

@@ -1,6 +1,6 @@
 #pragma once
-namespace Joker
-{
+#include "Predefine.h"
+NS_JE_BEGIN
 	class drawable
 	{
 	public:
@@ -9,4 +9,4 @@ namespace Joker
 		drawable();
 		virtual ~drawable();
 	};
-}
+NS_JE_END

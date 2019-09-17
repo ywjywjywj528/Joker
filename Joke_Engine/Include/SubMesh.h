@@ -1,9 +1,8 @@
 #pragma once
 #include "Predefine.h"
-namespace Joker
-{
+NS_JE_BEGIN
 	class JE_EXPORT SubMesh
 	{
 
 	};
-}
+NS_JE_END

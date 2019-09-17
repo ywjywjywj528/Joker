@@ -1,8 +1,7 @@
 ﻿#pragma once
 #include "Predefine.h"
 
-namespace Joker
-{
+NS_JE_BEGIN
 	class Scene;
 	class Platfrom;
 	class JE_EXPORT Director
@@ -24,5 +23,4 @@ namespace Joker
 		Platfrom*  m_Platform;
 		vector<Scene* > _scenes;	
 	};
-
-}
+NS_JE_END

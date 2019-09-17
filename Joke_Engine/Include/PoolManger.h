@@ -1,8 +1,7 @@
 #pragma once
 #include "Predefine.h"
 #include <typeinfo>
-namespace Joker
-{
+NS_JE_BEGIN
 	class Node;
 	class Component;
 	template<class T>
@@ -76,4 +75,4 @@ namespace Joker
 		AutoNodePool* _nodePool;
 		AutoComponentPool* _componentPool;
 	};
-}
+NS_JE_END

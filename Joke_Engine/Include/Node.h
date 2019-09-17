@@ -1,7 +1,6 @@
 #pragma once
 #include "Predefine.h"
-namespace Joker
-{
+NS_JE_BEGIN
 	class Behabior;
 	class Component;
 	class Node
@@ -31,4 +30,4 @@ namespace Joker
 		ComponentMap _componets;
 		
 	};
-}
+NS_JE_END

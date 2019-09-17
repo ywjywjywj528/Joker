@@ -22,7 +22,5 @@ namespace Joker
 			return;
 		}
 		m_Cams.push_back(_cam);
-	}
-
-			
-}
+	}		
+NS_JE_END
