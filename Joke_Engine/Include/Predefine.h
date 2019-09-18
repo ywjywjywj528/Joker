@@ -31,7 +31,7 @@ if(p != nullptr)\
 #ifdef __cplusplus
 #define NS_JE_BEGIN                     namespace Joker {
 #define NS_JE_END                       }
-#define USING_NS_JE                    using namespace Joker
+#define USING_NS_JE                    using namespace Joker;
 #define NS_CC                           ::Joker
 #else
 #define NS_JE_BEGIN 

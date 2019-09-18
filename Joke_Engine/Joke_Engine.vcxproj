@@ -30,7 +30,7 @@
     <ClInclude Include="Include\glview.h" />
     <ClInclude Include="Include\Node.h" />
     <ClInclude Include="Include\OGLHeader.h" />
-    <ClInclude Include="Include\Platform.h" />
+    <ClInclude Include="Include\JEPlatform.h" />
     <ClInclude Include="Include\PoolManger.h" />
     <ClInclude Include="Include\Predefine.h" />
     <ClInclude Include="Include\Rect.h" />
@@ -47,7 +47,7 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Director.cpp" />
     <ClCompile Include="glview.cpp" />
-    <ClCompile Include="Platfrom.cpp" />
+    <ClCompile Include="JEPlatform.cpp" />
     <ClCompile Include="Rect.cpp" />
     <ClCompile Include="PoolManger.cpp" />
     <ClCompile Include="Scene.cpp" />

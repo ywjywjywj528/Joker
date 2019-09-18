@@ -1,9 +1,9 @@
 ﻿#pragma once
 #include "Predefine.h"
-
+#include "JEPlatform.h"
 NS_JE_BEGIN
 	class Scene;
-	class Platfrom;
+	//class Platfrom;
 	class JE_EXPORT Director
 	{
 	public:
@@ -20,7 +20,7 @@ NS_JE_BEGIN
 	private:
 	
 		Scene* m_RuningScene;
-		Platfrom*  m_Platform;
+		JEPlatform*  m_Platform;
 		vector<Scene* > _scenes;	
 	};
 NS_JE_END

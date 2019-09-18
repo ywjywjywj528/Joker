@@ -1,6 +1,6 @@
 ﻿#include "Director.h"
 #include "Scene.h"
-#include "Platform.h"
+//#include "Platform.h"
 NS_JE_BEGIN
 	Director Director::m_directorInstance;
 	//int Director::aaa = 1;
@@ -21,7 +21,7 @@ NS_JE_BEGIN
 	{
 		if (m_Platform == nullptr)
 		{
-
+			m_Platform = new JEPlatform();
 		}
 	}
 

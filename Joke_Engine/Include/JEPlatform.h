@@ -1,11 +1,14 @@
 #pragma once
-#include "glfw3.h"
+
 #include "Predefine.h"
+class GLFWwindow;
+class GLFWmonitor;
 NS_JE_BEGIN
-	class JE_EXPORT Platform
+	class JE_EXPORT JEPlatform
 	{
 	public:
-		Platform();
+		JEPlatform();
+		~JEPlatform();
 	private:
 		GLFWwindow* _mainWindow;
 		GLFWmonitor* _monitor;

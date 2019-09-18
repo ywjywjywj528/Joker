@@ -1,7 +1,8 @@
-#include "Platform.h"
+#include "JEPlatform.h"
 #include "glview.h"
+#include "glfw3.h"
 NS_JE_BEGIN
-	Platform::Platform()
+JEPlatform::JEPlatform()
 	{
 		GLView* pView = GLView::GetInstance();
 		glfwWindowHint(GLFW_RESIZABLE, pView->IsResizeable() ? GL_TRUE : GL_FALSE);
@@ -18,4 +19,8 @@ NS_JE_BEGIN
 
 		_mainWindow = glfwCreateWindow(neededWidth, neededHeight, pView->GetName().c_str(), _monitor, nullptr);
 	}
+JEPlatform::~JEPlatform()
+{
+
+}
 NS_JE_END
