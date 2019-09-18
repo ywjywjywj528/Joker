@@ -9,7 +9,10 @@ NS_JE_BEGIN
 	public:
 		JEPlatform();
 		~JEPlatform();
+		bool Init();
 	private:
+		bool InitGlew();
+
 		GLFWwindow* _mainWindow;
 		GLFWmonitor* _monitor;
 	};

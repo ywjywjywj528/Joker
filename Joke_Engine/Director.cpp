@@ -22,6 +22,7 @@ NS_JE_BEGIN
 		if (m_Platform == nullptr)
 		{
 			m_Platform = new JEPlatform();
+			m_Platform->Init();
 		}
 	}
 
