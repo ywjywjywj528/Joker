@@ -10,6 +10,7 @@ NS_JE_BEGIN
 		JEPlatform();
 		~JEPlatform();
 		bool Init();
+		GLFWwindow* GetWindow() { return _mainWindow; }
 	private:
 		bool InitGlew();
 

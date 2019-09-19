@@ -1,8 +1,6 @@
 #include "JEPlatform.h"
 #include "glview.h"
-#define GLEW_STATIC
-#include <GL/glew.h>
-#include "glfw3.h"
+#include "OGLHeader.h"
 NS_JE_BEGIN
 JEPlatform::JEPlatform()
 {
@@ -39,6 +37,7 @@ bool JEPlatform::Init()
 	if (_mainWindow == nullptr)
 		return false;
 	glfwMakeContextCurrent(_mainWindow);
+	InitGlew();
 }
 
 bool JEPlatform::InitGlew()

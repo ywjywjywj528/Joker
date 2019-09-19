@@ -17,10 +17,12 @@ NS_JE_BEGIN
 	private:
 		static Director m_directorInstance;
 		Director();
+		void Action();
 	private:
 	
 		Scene* m_RuningScene;
 		JEPlatform*  m_Platform;
-		vector<Scene* > _scenes;	
+		vector<Scene* > _scenes;
+		bool bAction;
 	};
 NS_JE_END

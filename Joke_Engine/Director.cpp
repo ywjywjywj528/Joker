@@ -1,6 +1,6 @@
 ﻿#include "Director.h"
 #include "Scene.h"
-//#include "Platform.h"
+#include "OGLHeader.h"
 NS_JE_BEGIN
 	Director Director::m_directorInstance;
 	//int Director::aaa = 1;
@@ -8,6 +8,7 @@ NS_JE_BEGIN
 	{
 		m_RuningScene = nullptr;
 		m_Platform = nullptr;
+		bAction = false;
 	}
 
 	Scene* Director::CreateScene()
@@ -23,6 +24,20 @@ NS_JE_BEGIN
 		{
 			m_Platform = new JEPlatform();
 			m_Platform->Init();
+		}
+		m_RuningScene = pScene;
+		Action();
+	}
+
+	void Director::Action()
+	{
+		if (bAction)
+			return;
+		while (true)
+		{
+			bAction = true;
+			glClearColor(255, 0, 0, 1);
+			glfwSwapBuffers(m_Platform->GetWindow());
 		}
 	}
 
