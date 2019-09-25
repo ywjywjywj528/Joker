@@ -1,6 +1,7 @@
 #pragma once
 #include "Predefine.h"
 #include "OGLHeader.h"
+#include "vector3.h"
 NS_JE_BEGIN
 	class JE_EXPORT Mesh
 	{
@@ -16,9 +17,10 @@ NS_JE_BEGIN
 
 	public:
 		static Mesh* CreateFromFile(const char* _filePath);
-
+		static Mesh* CreateLines(vector3f* pts, int size);
+		~Mesh();
 	private:
 		Mesh();
-		~Mesh();
+		
 	};
 NS_JE_END
