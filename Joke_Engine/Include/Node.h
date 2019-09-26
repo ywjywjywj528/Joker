@@ -3,6 +3,7 @@
 NS_JE_BEGIN
 	class Behabior;
 	class Component;
+	class Drawable;
 	class Node
 	{
 	public:
@@ -21,6 +22,7 @@ NS_JE_BEGIN
 		void AddBahavior(Behabior* _havior);
 		void RemoveBehavior(Behabior* _havior);
 
+		void AddDrawable(Drawable* object);
 	protected:
 		void draw();
 	protected:

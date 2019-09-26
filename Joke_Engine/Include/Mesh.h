@@ -17,10 +17,15 @@ NS_JE_BEGIN
 
 	public:
 		static Mesh* CreateFromFile(const char* _filePath);
-		static Mesh* CreateLines(vector3f* pts, int size);
+		static Mesh* CreateLines(vector3f* pts, int size,bool dynamic = false);
 		~Mesh();
 	private:
 		Mesh();
 		
+		bool _dynamic;
+		GLuint _vbo;
+		unsigned int _vertexsize;
+		void* _data;
+		OperationType _optype;
 	};
 NS_JE_END

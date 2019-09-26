@@ -807,6 +807,9 @@
     <ClInclude Include="Include\vector3.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Include\Model.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Joker_Engine.rc">
@@ -839,6 +842,9 @@
       <Filter>glm</Filter>
     </ClCompile>
     <ClCompile Include="Mesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
