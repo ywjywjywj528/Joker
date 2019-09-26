@@ -19,17 +19,20 @@ NS_JE_BEGIN
 
 		vector<Node*>& findNodes(char* id, bool recursive = false)const;
 
-		void AddBahavior(Behabior* _havior);
-		void RemoveBehavior(Behabior* _havior);
+		//void AddBahavior(Behabior* _havior);
+		//void RemoveBehavior(Behabior* _havior);
 
-		void AddDrawable(Drawable* object);
+		void AddComponent(Component* object);
+
+		~Node();
 	protected:
+		Node(const char* id);
 		void draw();
 	protected:
 		bool m_bActive = true;
 
 		typedef vector<Component*> ComponentMap;
 		ComponentMap _componets;
-		
+		string _id;
 	};
 NS_JE_END

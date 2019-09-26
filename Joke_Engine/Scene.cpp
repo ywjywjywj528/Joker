@@ -1,7 +1,6 @@
 #include "Scene.h"
 #include "Camera.h"
-namespace Joker
-{
+NS_JE_BEGIN
 	Scene::Scene()
 	{
 		_defaultCamera = Camera::CreateCamera();
