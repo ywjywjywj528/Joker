@@ -278,6 +278,7 @@
     <ClInclude Include="Include\Rect.h" />
     <ClInclude Include="Include\Ref.h" />
     <ClInclude Include="Include\Scene.h" />
+    <ClInclude Include="Include\ShaderCompile.h" />
     <ClInclude Include="Include\SubMesh.h" />
     <ClInclude Include="Include\Transform.h" />
     <ClInclude Include="Include\vector3.h" />
@@ -298,6 +299,7 @@
     <ClCompile Include="Rect.cpp" />
     <ClCompile Include="PoolManger.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="ShaderCompile.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Include\glm\detail\func_common.inl" />

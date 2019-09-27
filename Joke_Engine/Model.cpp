@@ -20,7 +20,9 @@ Model* Model::CreateModel(Mesh* mesh)
 
 int Model::draw()
 {
-	return 0;
+	if (_mesh == nullptr)
+		return -1;
+
 }
 
 NS_JE_END
